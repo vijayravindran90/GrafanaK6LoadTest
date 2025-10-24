@@ -4,7 +4,7 @@ export const options = {
     cloud: {
      projectID: 3817278,
     // Test runs with the same name groups test runs together
-    name: 'k6 test',
+    name: 'k6 Breeds Loads test',
     distribution: { 'amazon:gb:london': { loadZone: 'amazon:gb:london', percent: 100 }},
     apm: [],
   },

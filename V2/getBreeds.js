@@ -3,7 +3,7 @@ import http from 'k6/http'
 
 export const options = {
   cloud: {
-     projectID: 3817278,
+    projectID: __ENV.K6_CLOUD_PROJECT_ID,
     // Test runs with the same name groups test runs together
     name: 'k6 Breeds Loads test',
     distribution: { 'amazon:gb:london': { loadZone: 'amazon:gb:london', percent: 100 }},
