@@ -1,0 +1,14 @@
+# azure-pipelines.yml
+# Note: This is a sample Azure Pipeline configuration file for running k6 load tests in Grafana Cloud.
+# Adjust the parameters and settings as needed for your specific use case.
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: k6-load-test@0
+    displayName: 'k6 Grafana Cloud Test'
+    inputs:
+      filename: './main.js'
+      cloud: true
+      
