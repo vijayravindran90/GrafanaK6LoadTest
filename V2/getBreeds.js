@@ -33,7 +33,7 @@ export function scenario_1() {
 
   // ACA Search Service
   response = http.get(
-    'hhttps://dogapi.dog/api/v2/breeds?page%5Bnumber%5D=2&page%5Bsize%5D=20'
+    'https://dogapi.dog/api/v2/breeds?page%5Bnumber%5D=2&page%5Bsize%5D=20'
   )
 
   // Automatically added sleep
