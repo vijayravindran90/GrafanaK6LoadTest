@@ -1,2 +1,13 @@
-- name: Run Grafana k6 tests
-  uses: grafana/run-k6-action@v1.3.1
+on:
+  push:
+
+jobs:
+  protocol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: grafana/setup-k6-action@v1
+      - uses: grafana/run-k6-action@v1
+        with:
+          path: |
+            ./main*.js
